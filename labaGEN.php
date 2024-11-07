@@ -46,4 +46,13 @@ while (true) {
     }
 }
 
+// Функция для ввода чисел
+function enterNumbers() {
+    global $num1, $num2;
+    echo "Введите первое число: ";
+    $num1 = trim(fgets(STDIN));
+    echo "Введите второе число: ";
+    $num2 = trim(fgets(STDIN));
+}
+
 ?>
