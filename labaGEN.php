@@ -15,6 +15,15 @@ function showMenu() {
     echo "Выберите пункт меню: ";
 }
 
+// Функция для ввода чисел
+function enterNumbers() {
+    global $num1, $num2;
+    echo "Введите первое число: ";
+    $num1 = trim(fgets(STDIN));
+    echo "Введите второе число: ";
+    $num2 = trim(fgets(STDIN));
+}
+
 // Основной цикл приложения
 while (true) {
     showMenu();
@@ -22,10 +31,7 @@ while (true) {
 
     switch ($choice) {
         case 1:
-            echo "Введите первое число: ";
-            $num1 = trim(fgets(STDIN));
-            echo "Введите второе число: ";
-            $num2 = trim(fgets(STDIN));
+            enterNumbers();
             break;
         case 2:
             echo "Сложение: " . addition($num1, $num2) . "\n";
@@ -45,14 +51,4 @@ while (true) {
             echo "Неверный выбор. Пожалуйста, попробуйте снова.\n";
     }
 }
-
-// Функция для ввода чисел
-function enterNumbers() {
-    global $num1, $num2;
-    echo "Введите первое число: ";
-    $num1 = trim(fgets(STDIN));
-    echo "Введите второе число: ";
-    $num2 = trim(fgets(STDIN));
-}
-
 ?>
