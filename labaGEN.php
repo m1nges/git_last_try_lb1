@@ -29,6 +29,10 @@ function addition($num1, $num2) {
     return $num1 + $num2;
 }
 
+//Функция для вычитания
+function subtraction($num1, $num2) {
+    return $num1 - $num2;
+}
 
 // Основной цикл приложения
 while (true) {
