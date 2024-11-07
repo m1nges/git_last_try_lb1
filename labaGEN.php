@@ -34,6 +34,14 @@ function subtraction($num1, $num2) {
     return $num1 - $num2;
 }
 
+// Функция для деления
+function division($num1, $num2) {
+    if ($num2 == 0) {
+        return "Ошибка: деление на ноль невозможно.";
+    }
+    return $num1 / $num2;
+}
+
 // Основной цикл приложения
 while (true) {
     showMenu();
