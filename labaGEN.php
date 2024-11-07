@@ -42,6 +42,12 @@ function division($num1, $num2) {
     return $num1 / $num2;
 }
 
+
+//Возведение в степень
+function power($num1, $num2) {
+    return pow($num1, $num2);
+}
+
 // Основной цикл приложения
 while (true) {
     showMenu();
